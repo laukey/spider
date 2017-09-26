@@ -37,7 +37,7 @@ class ThreadUrl(threading.Thread):
 def mythread(site,num=20):
 	'''
 	num: 结合队列，跑多线程的抓取，默认线程数是20个
-	site: 这是一个关于某个站点的引用，比如 t = dytt8() 
+	site: 这是一个关于某个站点的引用，比如 t = dytt8()
 	'''
 	queue = Queue()
 
@@ -58,5 +58,6 @@ def mythread(site,num=20):
 
 	for ftp_url in ftp_urls:
         	print ftp_url
+	return ftp_urls
 if __name__ == '__main__':
 	mythread(xunbo)
