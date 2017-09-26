@@ -14,6 +14,6 @@ print "begin print"
 ftp_urls = mythread(dytt8)
 file = open('test.txt','w+')
 for ftp_url in ftp_urls:
-	file.write((ftp_url + '/n').encode('utf-8'))
+	file.write((ftp_url + '\n').encode('utf-8'))
 file.flush()
 file.close()
